@@ -23,9 +23,11 @@ class Header extends Component {
       <div>
         <nav>
           <div className="nav-wrapper">
-            <a className="left brand-logo">
+            <Link to={this.props.auth ? '/surveys' : '/'} //ternary right here! 
+              className="left brand-logo"
+            >
               Emailizer
-            </a>
+            </Link>
             <ul className="right">
               {this.renderContent()}
             </ul>
