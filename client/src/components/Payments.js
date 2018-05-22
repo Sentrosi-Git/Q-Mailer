@@ -10,7 +10,7 @@ class Payments extends Component {
 
     return(
     <StripeCheckout
-      name="Emailizer!"
+      name="Q-Mailer!"
       description="$5 for 5 Q-Credits"
       amount={500}
       token={token => this.props.handleToken(token)}
